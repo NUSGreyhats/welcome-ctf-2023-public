@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  client:
+    build: .
+    container_name: baby_sqli
+    ports:
+      - 23000:5000

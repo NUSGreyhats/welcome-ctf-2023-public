@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  rce-wont-help:
+    container_name: rce-wont-help
+    image: rce-wont-help
+    build:
+      context: .
+    ports:
+      - 23545:5000

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+        <label>Username: <input type="text" name="username" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        let errorMessage = "{{ get_flashed_messages(category_filter=['danger'])[0] if get_flashed_messages(category_filter=['danger']) else '' }}";
+        if (errorMessage) {
+            document.getElementById('error-message').innerText = errorMessage;
+            document.getElementById('error-message').style.display = 'block';
+        }
+    </script>
+{% endblock %}

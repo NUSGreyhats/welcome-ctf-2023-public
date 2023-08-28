@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    {% if session.get('loggedin') %}
+    <p>Welcome, {{ session['username'] }}!</p>
+
+    <a href="/logout" class="button">Logout</a>
+    <a href="/flag" class="button">Get Flag</a>
+    {% else %}
+    <p>Welcome, Guest!</p>
+    <a href="/login" class="button">login</a>
+    <a href="/register" class="button">Register</a>
+    {% endif %}
+{% endblock %}

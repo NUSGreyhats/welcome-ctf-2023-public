@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  scissorspaperpwn:
+    build: .
+    read_only: true
+    ports:
+      - "21212:10000"
+

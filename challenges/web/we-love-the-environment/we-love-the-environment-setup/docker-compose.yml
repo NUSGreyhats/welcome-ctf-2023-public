@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  welovetheenvironment:
+    image: welovetheenvironment
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "22222:8000"

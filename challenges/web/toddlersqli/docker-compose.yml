@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  client:
+    build: .
+    container_name: toddler_sqli
+    ports:
+      - 29001:5000

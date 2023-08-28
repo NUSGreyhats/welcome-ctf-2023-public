@@ -1,0 +1,8 @@
+version: "3.3"
+
+services:
+  simple-ai:
+    build: .
+    read_only: true
+    ports:
+      - "24123:5000"

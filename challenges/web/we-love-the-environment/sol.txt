@@ -1,0 +1,1 @@
+?prog=tar&var=TAR_OPTIONS&val=--to-command '/readflag GIVEFLAGPLS' -x -f /lib/apk/db/scripts.tar

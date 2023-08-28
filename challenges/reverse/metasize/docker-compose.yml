@@ -1,0 +1,9 @@
+version: '3.7'
+
+
+services:
+  web:
+    build: ./html
+    container_name: re-metasize
+    ports:
+      - "21213:80"

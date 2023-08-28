@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  client:
+    build: ./src
+    container_name: inspector
+    ports:
+      - 8000:80

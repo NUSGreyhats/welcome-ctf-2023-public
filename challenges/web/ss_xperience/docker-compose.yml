@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./setup-baby-web
+    ports:
+      - "29874:5000"
+    environment:
+      - FLAG=greyhats{b4by_x55_scr1pt1ng_92488c0f2286e33bc1eda97a2beb1a2b}
+    
